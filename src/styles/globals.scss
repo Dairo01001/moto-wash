@@ -1,0 +1,38 @@
+@import "./conf";
+
+html,
+body {
+  background-image: radial-gradient($PRIMARY 1px, #fdfdfd 1px),
+    radial-gradient($PRIMARY 1px, #fdfdfd 1px);
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+  padding: 0px;
+  margin: 0px;
+  font-family: $BASE;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+main {
+  background: $WHITE;
+  border-radius: 5px;
+  box-shadow: 0 10px 25px #7fb3d5;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: $BREAKPOINT-MOBILE) {
+  main {
+    height: 90vh;
+    max-width: $BREAKPOINT-MOBILE;
+    width: 100%;
+  }
+}
